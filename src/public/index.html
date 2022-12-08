@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
+    <style>
+
+      
+
+
+.container .col-md-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .card::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  height: 0;
+  width: 150%;
+  background-color: #1369ce;
+  z-index: -1;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .card {
+  width: 280px;
+  height: 320px;
+  overflow: hidden;
+  z-index: 3;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  box-shadow: 5px 5px 10px #7b7b7ba8,
+              -5px -5px 10px #7b7b7ba8;
+}
+
+.container .card:hover::before {
+  height: 150px;
+}
+
+.container .card .img-container {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .card:hover .img-container {
+  border: 10px solid #1369ce;
+}
+
+.container .card .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+
+.container .card:hover .img-container img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.8);
+}
+
+.container .card .h3 {
+  margin-bottom: 5px !important;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.container .card .designation {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  pointer-events: none;
+}
+
+.container .card ul {
+  background-color: #1369ce;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(100px);
+}
+
+.container .card:hover ul {
+  transform: translateY(40px);
+}
+
+.container .card ul li {
+  padding: 5px 8px;
+  transition: all 0.4s;
+}
+
+.container .card ul li a {
+  color: #FFF;
+}
+
+
+
+.container .card ul li:hover a {
+  color: #1369ce;
+}
+
+    </style>
+  
+  </head>
+  <body>
+
+    <!-- As a heading -->
+
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+
+        <span class="navbar-brand mb-0 h1 text-white"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="1 1 15 15">
+              <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+            </svg>
+          TecToucans
+      </span>
+
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+          </ul>
+
+        </div>
+
+
+      </div>
+    </nav>
+
+
+    <!-- Banner -->
+
+    <div class="d-none d-lg-block">
+     
+      <img src="./assets/Banner.png" width="100%" alt="">
+      
+    </div>
+
+    
+    <!-- INICIO HERRAMINETAS MOBIL -->
+
+    <div class="container text-center">
+        <div class="row row-cols-1">
+
+          <div class="col">
+            <div class="px-4 py-5 my-5 text-center">
+
+              <div class="container text-center">
+                <div class="row">
+                
+                  <div class="col">
+                    <img class="d-block mx-auto mb-4" src="https://img.icons8.com/color/344/angularjs.png" alt="" width="72" ">
+                  </div>
+
+                  <div class="col">
+                    <img class="d-block mx-auto mb-4" src="https://img.icons8.com/color/512/flutter.png" alt="" width="72" ">
+                  </div>
+
+                  <div class="col">
+                    <img class="d-block mx-auto mb-4" src="https://img.icons8.com/color/512/react-native.png" alt="" width="72" ">
+                  </div>
+
+                  <div class="col">
+                    <img class="d-block mx-auto mb-4" src="https://img.icons8.com/color/512/mongodb.png" alt="" width="72" ">
+                  </div>
+
+                  <div class="col">
+                    <img class="d-block mx-auto mb-4" src="https://img.icons8.com/fluency/2x/node-js.png" alt="" width="72" ">
+                  </div>
+
+                  <div class="col">
+                    <img class="d-block mx-auto mb-4" src="https://ronenagranat.com/assets/images/nestjs.png" alt="" width="70" ">
+                  </div>
+
+                  <div class="col">
+                    <img class="d-block mx-auto mb-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/2048px-.NET_Core_Logo.svg.png" alt="" width="70" ">
+                  </div>
+
+                  <div class="col">
+                    <img class="d-block mx-auto mb-4" src="https://img.icons8.com/offices/344/express-js.png" alt="" width="70" ">
+                  </div>
+
+                </div>
+              </div>
+                
+                <h1 class="display-5 fw-bold pt-5">Herramientas de Desarrollo</h1>
+
+                <div class="col-lg-6 mx-auto">
+                  <p class="lead mb-3">Utilizamos estas herramientas para el desarrollo de los sistemas, además de poder utilizar tecnologías dentro de estos sistemas, los que los convierten en grandes aplicaciones, como el uso de sockets para aplicaciones en tiempo Real</p>
+                </div>
+
+              </div>
+          </div>
+          
+        </div>
+    </div>
+
+
+    <!-- INICIO PC -->
+
+
+
+
+
+
+
+
+    
+    <div class="container px-4 py-1 pt-5" id="featured-3">
+      <h2 class="pb-2 border-bottom">Proyectos Recientes</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            
+            <img class="iconApp" src="./assets/9.png" alt="HOLAXS">
+
+          </div>
+          <h3 class="fs-2">ARSIC</h3>
+          <p>Sistema para la gestión de los reportes de fallas o soporte de cómputo, implementando sockets para hacer una aplicación en tiempo real. Cuenta con un panel administrativo WEB y su aplicación móvil</p>
+          
+        </div>
+
+
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-hourglass-split" viewBox="-2 -2 20 20">
+              <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+            </svg>
+          </div>
+          <h3 class="fs-2">TimeWorkTucan</h3>
+          <p>Sistema control de acceso y reloj checador, que permite centralizar y automatizar la gestion del área de Recursos Humanos del instituto tecnológico de Cancún</p>
+          
+        </div>
+
+
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            
+            <svg xmlns="http://www.w3.org/2000/svg"  width="2em" height="2em" fill="currentColor" class="bi bi-braces m-1" viewBox="-2 -2 20 20">
+              <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
+            </svg>
+          </div>
+          <h3 class="fs-2">Sistema de Bonos</h3>
+          <p>Estudio socio-económico aplicado a los estudiantes del instituto tecnológico, para otorgar bonos de reinscripción</p>
+          
+        </div>
+
+        
+      </div>
+    </div>
+ 
+
+    <div class="container px-4 py-1 pt-5"  id="featured-3">
+      <h2 class=" border-bottom ">Equipo de desarrollo </h2>
+    
+
+    <div class="container pt-5 pb-5">
+      <div class="row">
+          <div class="col-md-4 mb-md-0 mb-3">
+              <div class="card d-flex flex-column align-items-center justify-content-center">
+                  <div class="inner-content d-flex flex-column align-items-center justify-content-center">
+                      <div class="img-container rounded-circle">
+                          <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                              alt="" class="rounded-circle">
+                      </div>
+                      <div class="h3 text-center">Mariana Olivas</div>
+                      <p class="designation text-muted text-uppercase">FullStack Developer</p>
+                  </div>
+                  <ul
+                      class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
+                      <li><a>Mocha Blanco Helado pls</a></li>
+                  </ul>
+              </div>
+          </div>
+
+
+         <div class="col-md-4 mb-md-0 mb-3">
+              <div class="card d-flex flex-column align-items-center justify-content-center">
+                  <div class="inner-content d-flex flex-column align-items-center justify-content-center">
+                      <div class="img-container rounded-circle">
+                          <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                              alt="" class="rounded-circle">
+                      </div>
+                      <div class="h3 text-center">Fernado Hernandez</div>
+                      <p class="designation text-muted text-uppercase">FullStack Developer</p>
+                  </div>
+                  <ul
+                      class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
+                      <li><a>No se correr gente</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="col-md-4 mb-md-0 mb-3">
+              <div class="card d-flex flex-column align-items-center justify-content-center">
+                  <div class="inner-content d-flex flex-column align-items-center justify-content-center">
+                      <div class="img-container rounded-circle">
+                          <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                              alt="" class="rounded-circle">
+                      </div>
+                      <div class="h3 text-center">Aaron Martinez</div>
+                      <p class="designation text-muted text-uppercase">FullStack Developer</p>
+                  </div>
+                  <ul
+                      class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
+                      <li><a>Mocha Blanco Helado pls</a></li>
+                  </ul>
+              </div>
+          </div>
+
+
+      </div>
+  </div>
+
+
+  </div>
+
+
+
+
+   
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
